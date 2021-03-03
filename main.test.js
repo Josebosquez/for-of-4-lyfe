@@ -63,13 +63,15 @@ function addNoises(array){
   let array3 = [];
   for (i = 0; i < array.length; i++){
     if (array[i]=== "Fido" || array[i] === 'Maisie'|| array[i] === "Rolph"){
-      array3.push(`${array[i]} says "Woof!" `)
+      array3.push(`${array[i]} says "Woof!"`)
   }
-    if (array[i]=== "Garfield" || array[i] === 'Heathcliff'){
-    array3.push(`${array[i]} says "Meow!" `)
-  }
-    if (array[i]=== "Sharp Tooth" || array[i] === 'Barnie'){
-    array3.push(`${array[i]} says "Rowr!" `)
+   else if (array[i] === "Garfield"){
+    array3.push(`${array[i]} says "Meow!"`)
+  }  else if (array[i] === "Heathcliff"){
+    array3.push(`Heathcliff says "Meow!"`)
+    }
+    else if (array[i]=== "Sharp Tooth" || array[i] === 'Barnie'){
+    array3.push(`${array[i]} says "ROWR."`)
       return array3
     }
   }
