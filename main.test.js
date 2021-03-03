@@ -24,6 +24,16 @@ function countSpaces(string){
     return spaceCount;
 }
 
+const arr1 = [];
+function countTrues (trues){
+  let trueCount = 0;
+  for (let i = 0; i < trues.length; i++){
+    if (trues[i] === true){
+      trueCount += 1;
+    }
+  }
+    return trueCount;
+}
 
 
 
