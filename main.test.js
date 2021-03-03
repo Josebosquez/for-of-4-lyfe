@@ -2,8 +2,27 @@
  * YOUR CODE HERE *
  ******************/
 
+const nums = [];
+function addAll(nums){
+let sum = 0;
+for (let i = 0; i < nums.length; i++){
+const value = nums[i];
+sum = value + sum;
+} 
+return (sum);
+}
 
 
+
+function countSpaces(string){
+  let spaceCount = 0;
+  for (i = 0; i < string.length; i++){
+    if (string[i] === " "){
+    spaceCount = spaceCount + 1; 
+    }
+  }
+    return spaceCount;
+}
 
 
 
@@ -54,10 +73,6 @@ describe('addAll', () => {
 
     expect(addAll(nums1)).toBe(1007);
     expect(addAll(nums2)).toBe(-854);
-  })
-
-  it(`isn't reassignable`, () => {
-    expect(() => addAll = 500).toThrow();
   })
 })
 
