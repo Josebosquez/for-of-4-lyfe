@@ -35,6 +35,57 @@ function countTrues (trues){
     return trueCount;
 }
 
+// function makeFriendly(para){
+//   let period = ".";
+//   let exa = "!";
+//   for (let i = 0; i < para.length; i++)
+// {
+//     }
+// }
+
+function cubeAll(arr){
+  let array1 = [];
+  for (i = 0; i < array1.length; i++){
+    array1[i] = array[i] * array[i] * array[i];
+  }
+  return Number(array1.join(''));
+}
+
+function addNoises(array){
+  let array3 = [];
+  for (i = 0; i < array.length; i++){
+    if (array[i]=== "Fido" || array[i] === 'Maisie'|| array[i] === "Rolph"){
+      array3.push(`${array[i]} says "Woof!" `)
+  }
+    if (array[i]=== "Garfield" || array[i] === 'Heathcliff'){
+    array3.push(`${array[i]} says "Meow!" `)
+  }
+    if (array[i]=== "Sharp Tooth" || array[i] === 'Barnie'){
+    array3.push(`${array[i]} says "Rowr!" `)
+      return array3
+    }
+  }
+}
+
+function womenOnly(arr){
+  let women = [];
+  for (const value of arr){
+    if (value[value.length-1] === "F"){
+    women.push(value)
+  }
+  }
+  return women;
+}
+
+function integersOnly(int){
+
+}
+
+
+
+
+
+
 
 
 /*********************************
