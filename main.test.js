@@ -35,21 +35,29 @@ function countTrues (trues){
     return trueCount;
 }
 
-// function makeFriendly(para){
-//   let period = ".";
-//   let exa = "!";
-//   for (let i = 0; i < para.length; i++)
-// {
-//     }
-// }
+function makeFriendly(str){
+
+  let str13 = "";
+  for (let i = 0; i < str.length; i++){
+    if (str[i] === "."){
+      str13 = str13 + "!";
+    } else {
+      str13 = str13 + str[i];
+      }
+    }
+    return str13;
+  }
+
+
 
 function cubeAll(arr){
   let array1 = [];
-  for (i = 0; i < array1.length; i++){
-    array1[i] = array[i] * array[i] * array[i];
-  }
-  return Number(array1.join(''));
+  for (i = 0; i < arr.length; i++){
+    array1.push(arr[i] * arr[i] * arr[i])
+  } 
+  return array1;
 }
+
 
 function addNoises(array){
   let array3 = [];
@@ -77,10 +85,16 @@ function womenOnly(arr){
   return women;
 }
 
+let integer = [];
 function integersOnly(int){
-
-}
-
+  let result = [];
+  for (const value of int){
+    if (Number.isInteger(value)){
+      result.push(value)
+  }
+} 
+return result;
+}   
 
 
 
